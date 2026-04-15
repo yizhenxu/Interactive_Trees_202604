@@ -1,0 +1,120 @@
+/* ================= GLOBAL ================= */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+}
+
+/* ================= TAB BARS ================= */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #f2f2f2;
+}
+
+.top-tabs {
+  border-bottom: 1px solid #ccc;
+}
+
+.bottom-tabs {
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+}
+
+.tab {
+  display: inline-block;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: black;
+  background: #ddd;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  background: #ccc;
+}
+
+.tab.active {
+  background: white;
+  border: 2px solid #333;
+  font-weight: bold;
+}
+
+/* ================= PAGE CONTENT ================= */
+#content {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* ================= TREE CONTAINER ================= */
+#tree-container {
+  margin-top: 40px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* ================= TREE LAYOUT ================= */
+.tree-node {
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px;
+  position: relative;
+}
+
+.node-box {
+  background: #ffffff;
+  border: 2px solid #4a90e2;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+  min-width: 180px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.node-box:hover {
+  background: #eaf2ff;
+}
+
+.children {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  position: relative;
+}
+
+.children::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background: #4a90e2;
+}
+
+.children::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #4a90e2;
+}
+
+.error-box {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  background: #fff4f4;
+  border: 1px solid #d88;
+  border-radius: 6px;
+  color: #900;
+}
