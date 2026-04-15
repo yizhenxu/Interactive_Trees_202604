@@ -1,82 +1,168 @@
 {
   "title": "mild pneumonia (90-day mortality)",
-  "details": ["N = 44497; Observed death 1.8%", "Observed ABX 79.1% / No-ABX 20.9%", "Counterfactual ABX mort 0.018 (0.016, 0.019) / No-ABX mort 0.02 (0.018, 0.024)", "ATE -0.003 (-0.006, 0)"],
-  "color": "white",
+  "details": ["N = 4516; Observed death 5.5%", "Observed ABX 82.4% / No-ABX 17.6%", "Counterfactual ABX mort 0.055 (0.049, 0.062) / No-ABX mort 0.086 (0.069, 0.102)", "ATE -0.031 (-0.048, -0.013)"],
+  "color": "#E3F2FD",
   "children": [
     {
-      "title": "No Lung Disease",
-      "details": ["N = 29542; Observed death 1.5%", "Observed ABX 77.9% / No-ABX 22.1%", "Counterfactual ABX mort 0.015 (0.013, 0.017) / No-ABX mort 0.016 (0.013, 0.02)", "ATE -0.001 (-0.005, 0.002)"],
+      "title": "Mild",
+      "details": ["N = 1317; Observed death <=15", "Observed ABX 74.9% / No-ABX 25.1%", "Counterfactual ABX mort 0.006 (0.003, 0.01) / No-ABX mort 0.009 (0.002, 0.02)", "ATE -0.003 (-0.015, 0.004)"],
       "color": "white",
       "children": [
         {
-          "title": "No Comorbidity",
-          "details": ["N = 15428; Observed death 0.9%", "Observed ABX 77.8% / No-ABX 22.2%", "Counterfactual ABX mort 0.009 (0.007, 0.01) / No-ABX mort 0.013 (0.01, 0.016)", "ATE -0.004 (-0.007, -0.001)"],
-          "color": "#FDE2E2",
+          "title": "No Lung Disease",
+          "details": ["N = 973; Observed death <=15", "Observed ABX 74.7% / No-ABX 25.3%", "Counterfactual ABX mort 0.005 (0.002, 0.009) / No-ABX mort 0.008 (0.002, 0.018)", "ATE -0.003 (-0.013, 0.004)"],
+          "color": "white",
           "children": [
             {
-              "title": "COVID",
-              "details": ["N = 2416; Observed death 1.2%", "Observed ABX 54.6% / No-ABX 45.4%", "Counterfactual ABX mort 0.011 (0.008, 0.015) / No-ABX mort 0.012 (0.008, 0.017)", "ATE -0.001 (-0.006, 0.004)"],
-              "color": "white",
-              "children": []
-            },
-            {
-              "title": "Influenza",
+              "title": "No Comorbidity",
               "details": ["N = 532; Observed death <=15", "Observed ABX 73.9% / No-ABX 26.1%", "Counterfactual ABX mort 0.002 (0.001, 0.005) / No-ABX mort 0.005 (0.001, 0.012)", "ATE -0.003 (-0.01, 0.002)"],
               "color": "white",
               "children": []
             },
             {
-              "title": "None",
-              "details": ["N = 11896; Observed death 0.8%", "Observed ABX 82.7% / No-ABX 17.3%", "Counterfactual ABX mort 0.008 (0.007, 0.01) / No-ABX mort 0.013 (0.01, 0.017)", "ATE -0.005 (-0.009, -0.002)"],
-              "color": "#FDE2E2",
-              "children": []
-            },
-            {
-              "title": "Other Viruses",
-              "details": ["N = 402; Observed death <=15", "Observed ABX 82.1% / No-ABX 17.9%", "Counterfactual ABX mort 0.007 (0.005, 0.011) / No-ABX mort 0.011 (0.005, 0.02)", "ATE -0.004 (-0.014, 0.003)"],
-              "color": "white",
-              "children": []
-            },
-            {
-              "title": "RSV",
-              "details": ["N = 182; Observed death <=15", "Observed ABX 70.9% / No-ABX 29.1%", "Counterfactual ABX mort 0.004 (0.001, 0.008) / No-ABX mort 0.007 (0.002, 0.014)", "ATE -0.003 (-0.009, 0.004)"],
+              "title": "Other Comorbidities",
+              "details": ["N = 441; Observed death <=15", "Observed ABX 75.7% / No-ABX 24.3%", "Counterfactual ABX mort 0.008 (0.004, 0.014) / No-ABX mort 0.011 (0.003, 0.024)", "ATE -0.003 (-0.017, 0.007)"],
               "color": "white",
               "children": []
             }
           ]
         },
         {
-          "title": "Other Comorbidities",
-          "details": ["N = 14114; Observed death 2.2%", "Observed ABX 78.1% / No-ABX 21.9%", "Counterfactual ABX mort 0.022 (0.019, 0.025) / No-ABX mort 0.02 (0.016, 0.025)", "ATE 0.002 (-0.003, 0.007)"],
+          "title": "Lung Disease",
+          "details": ["N = 344; Observed death <=15", "Observed ABX 75.3% / No-ABX 24.7%", "Counterfactual ABX mort 0.008 (0.004, 0.013) / No-ABX mort 0.013 (0.003, 0.027)", "ATE -0.005 (-0.02, 0.006)"],
+          "color": "white",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "Moderate",
+      "details": ["N = 2656; Observed death 5.3%", "Observed ABX 83.7% / No-ABX 16.3%", "Counterfactual ABX mort 0.053 (0.045, 0.062) / No-ABX mort 0.079 (0.057, 0.103)", "ATE -0.027 (-0.052, -0.003)"],
+      "color": "#E3F2FD",
+      "children": [
+        {
+          "title": "Hypoxemia (No Sepsis)",
+          "details": ["N = 456; Observed death 4.8%", "Observed ABX 84.2% / No-ABX 15.8%", "Counterfactual ABX mort 0.049 (0.04, 0.061) / No-ABX mort 0.077 (0.053, 0.103)", "ATE -0.028 (-0.054, -0.003)"],
+          "color": "#E3F2FD",
+          "children": [
+            {
+              "title": "No Lung Disease",
+              "details": ["N = 217; Observed death <=15", "Observed ABX 82.9% / No-ABX 17.1%", "Counterfactual ABX mort 0.044 (0.034, 0.055) / No-ABX mort 0.07 (0.046, 0.099)", "ATE -0.026 (-0.053, -0.003)"],
+              "color": "#E3F2FD",
+              "children": [
+                {
+                  "title": "No Comorbidity",
+                  "details": ["N = 89; Observed death <=15", "Observed ABX >83.1% / No-ABX <=15", "Counterfactual ABX mort 0.04 (0.028, 0.057) / No-ABX mort 0.063 (0.038, 0.092)", "ATE -0.023 (-0.047, -0.001)"],
+                  "color": "#E3F2FD",
+                  "children": []
+                },
+                {
+                  "title": "Other Comorbidities",
+                  "details": ["N = 128; Observed death <=15", "Observed ABX 79.7% / No-ABX 20.3%", "Counterfactual ABX mort 0.047 (0.036, 0.06) / No-ABX mort 0.075 (0.05, 0.105)", "ATE -0.029 (-0.058, -0.002)"],
+                  "color": "#E3F2FD",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "Lung Disease",
+              "details": ["N = 239; Observed death <=15", "Observed ABX 85.4% / No-ABX 14.6%", "Counterfactual ABX mort 0.054 (0.043, 0.067) / No-ABX mort 0.084 (0.057, 0.115)", "ATE -0.029 (-0.06, -0.002)"],
+              "color": "#E3F2FD",
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "Hypoxemia and Sepsis",
+          "details": ["N = 736; Observed death 6.8%", "Observed ABX 89.8% / No-ABX 10.2%", "Counterfactual ABX mort 0.073 (0.06, 0.086) / No-ABX mort 0.113 (0.082, 0.147)", "ATE -0.041 (-0.075, -0.007)"],
+          "color": "#E3F2FD",
+          "children": [
+            {
+              "title": "No Lung Disease",
+              "details": ["N = 369; Observed death 6%", "Observed ABX 91.1% / No-ABX 8.9%", "Counterfactual ABX mort 0.073 (0.059, 0.087) / No-ABX mort 0.114 (0.079, 0.15)", "ATE -0.042 (-0.078, -0.006)"],
+              "color": "lightgrey",
+              "children": [
+                {
+                  "title": "No Comorbidity",
+                  "details": ["N = 121; Observed death <=15", "Observed ABX >87.6% / No-ABX <=15", "Counterfactual ABX mort 0.049 (0.035, 0.065) / No-ABX mort 0.082 (0.053, 0.12)", "ATE -0.033 (-0.066, -0.005)"],
+                  "color": "#E3F2FD",
+                  "children": []
+                },
+                {
+                  "title": "Other Comorbidities",
+                  "details": ["N = 248; Observed death <=15", "Observed ABX 92.7% / No-ABX 7.3%", "Counterfactual ABX mort 0.084 (0.068, 0.102) / No-ABX mort 0.13 (0.09, 0.169)", "ATE -0.046 (-0.085, -0.006)"],
+                  "color": "lightgrey",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "Lung Disease",
+              "details": ["N = 367; Observed death 7.6%", "Observed ABX 88.6% / No-ABX 11.4%", "Counterfactual ABX mort 0.073 (0.059, 0.088) / No-ABX mort 0.113 (0.078, 0.149)", "ATE -0.04 (-0.078, -0.005)"],
+              "color": "#E3F2FD",
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "No Sepsis / No Hypoxemia",
+          "details": ["N = 384; Observed death 5.5%", "Observed ABX 82.8% / No-ABX 17.2%", "Counterfactual ABX mort 0.048 (0.038, 0.059) / No-ABX mort 0.068 (0.045, 0.093)", "ATE -0.02 (-0.045, 0.004)"],
           "color": "white",
           "children": [
             {
-              "title": "COVID",
-              "details": ["N = 1808; Observed death 2.7%", "Observed ABX 57.9% / No-ABX 42.1%", "Counterfactual ABX mort 0.029 (0.022, 0.036) / No-ABX mort 0.019 (0.013, 0.024)", "ATE 0.01 (0.002, 0.019)"],
-              "color": "#E3F2FD",
-              "children": []
+              "title": "No Lung Disease",
+              "details": ["N = 278; Observed death <=15", "Observed ABX 82.7% / No-ABX 17.3%", "Counterfactual ABX mort 0.046 (0.036, 0.057) / No-ABX mort 0.066 (0.043, 0.091)", "ATE -0.02 (-0.044, 0.004)"],
+              "color": "white",
+              "children": [
+                {
+                  "title": "No Comorbidity",
+                  "details": ["N = 75; Observed death <=15", "Observed ABX 78.7% / No-ABX 21.3%", "Counterfactual ABX mort 0.039 (0.028, 0.052) / No-ABX mort 0.056 (0.034, 0.082)", "ATE -0.016 (-0.04, 0.005)"],
+                  "color": "white",
+                  "children": []
+                },
+                {
+                  "title": "Other Comorbidities",
+                  "details": ["N = 203; Observed death <=15", "Observed ABX 84.2% / No-ABX 15.8%", "Counterfactual ABX mort 0.048 (0.038, 0.06) / No-ABX mort 0.069 (0.044, 0.097)", "ATE -0.021 (-0.047, 0.004)"],
+                  "color": "white",
+                  "children": []
+                }
+              ]
             },
             {
-              "title": "Influenza",
-              "details": ["N = 441; Observed death <=15", "Observed ABX 75.7% / No-ABX 24.3%", "Counterfactual ABX mort 0.008 (0.004, 0.014) / No-ABX mort 0.011 (0.003, 0.024)", "ATE -0.003 (-0.017, 0.007)"],
+              "title": "Lung Disease",
+              "details": ["N = 106; Observed death <=15", "Observed ABX 83% / No-ABX 17%", "Counterfactual ABX mort 0.052 (0.04, 0.066) / No-ABX mort 0.073 (0.047, 0.108)", "ATE -0.021 (-0.053, 0.005)"],
               "color": "white",
               "children": []
-            },
+            }
+          ]
+        },
+        {
+          "title": "Sepsis (No Hypoxemia)",
+          "details": ["N = 1080; Observed death 4.4%", "Observed ABX 79.6% / No-ABX 20.4%", "Counterfactual ABX mort 0.042 (0.035, 0.05) / No-ABX mort 0.061 (0.043, 0.082)", "ATE -0.019 (-0.04, 0.002)"],
+          "color": "white",
+          "children": [
             {
-              "title": "None",
-              "details": ["N = 11260; Observed death 2.2%", "Observed ABX 81.2% / No-ABX 18.8%", "Counterfactual ABX mort 0.022 (0.019, 0.025) / No-ABX mort 0.021 (0.016, 0.026)", "ATE 0.001 (-0.005, 0.006)"],
+              "title": "No Lung Disease",
+              "details": ["N = 737; Observed death 4.1%", "Observed ABX 78.8% / No-ABX 21.2%", "Counterfactual ABX mort 0.041 (0.033, 0.05) / No-ABX mort 0.059 (0.039, 0.078)", "ATE -0.018 (-0.038, 0.002)"],
               "color": "white",
-              "children": []
+              "children": [
+                {
+                  "title": "No Comorbidity",
+                  "details": ["N = 312; Observed death <=15", "Observed ABX 77.6% / No-ABX 22.4%", "Counterfactual ABX mort 0.021 (0.015, 0.028) / No-ABX mort 0.033 (0.02, 0.048)", "ATE -0.011 (-0.025, 0.001)"],
+                  "color": "white",
+                  "children": []
+                },
+                {
+                  "title": "Other Comorbidities",
+                  "details": ["N = 425; Observed death 5.9%", "Observed ABX 79.8% / No-ABX 20.2%", "Counterfactual ABX mort 0.055 (0.044, 0.068) / No-ABX mort 0.077 (0.052, 0.104)", "ATE -0.023 (-0.048, 0.003)"],
+                  "color": "white",
+                  "children": []
+                }
+              ]
             },
             {
-              "title": "Other Viruses",
-              "details": ["N = 390; Observed death <=15", "Observed ABX 82.6% / No-ABX 17.4%", "Counterfactual ABX mort 0.019 (0.013, 0.026) / No-ABX mort 0.017 (0.009, 0.03)", "ATE 0.001 (-0.013, 0.013)"],
-              "color": "white",
-              "children": []
-            },
-            {
-              "title": "RSV",
-              "details": ["N = 215; Observed death <=15", "Observed ABX 79.1% / No-ABX 20.9%", "Counterfactual ABX mort 0.013 (0.005, 0.021) / No-ABX mort 0.011 (0.003, 0.021)", "ATE 0.002 (-0.011, 0.015)"],
+              "title": "Lung Disease",
+              "details": ["N = 343; Observed death 5.2%", "Observed ABX 81.3% / No-ABX 18.7%", "Counterfactual ABX mort 0.045 (0.035, 0.057) / No-ABX mort 0.066 (0.046, 0.089)", "ATE -0.02 (-0.045, 0.001)"],
               "color": "white",
               "children": []
             }
@@ -85,39 +171,137 @@
       ]
     },
     {
-      "title": "Lung Disease",
-      "details": ["N = 14955; Observed death 2.3%", "Observed ABX 81.5% / No-ABX 18.5%", "Counterfactual ABX mort 0.023 (0.02, 0.025) / No-ABX mort 0.029 (0.023, 0.036)", "ATE -0.006 (-0.013, 0)"],
-      "color": "white",
+      "title": "Severe",
+      "details": ["N = 543; Observed death 18.8%", "Observed ABX 94.5% / No-ABX 5.5%", "Counterfactual ABX mort 0.19 (0.16, 0.224) / No-ABX mort 0.308 (0.221, 0.383)", "ATE -0.118 (-0.192, -0.028)"],
+      "color": "lightgrey",
       "children": [
         {
-          "title": "COVID",
-          "details": ["N = 1325; Observed death 2.6%", "Observed ABX 64.1% / No-ABX 35.9%", "Counterfactual ABX mort 0.028 (0.021, 0.036) / No-ABX mort 0.027 (0.02, 0.036)", "ATE 0.001 (-0.01, 0.012)"],
-          "color": "white",
-          "children": []
+          "title": "No Shock / No S. Hypoxemia",
+          "details": ["N = 130; Observed death 15.4%", "Observed ABX >88.5% / No-ABX <=15", "Counterfactual ABX mort 0.178 (0.143, 0.222) / No-ABX mort 0.291 (0.204, 0.374)", "ATE -0.113 (-0.203, -0.019)"],
+          "color": "lightgrey",
+          "children": [
+            {
+              "title": "No Lung Disease",
+              "details": ["N = 75; Observed death <=15", "Observed ABX >80% / No-ABX <=15", "Counterfactual ABX mort 0.181 (0.143, 0.23) / No-ABX mort 0.287 (0.197, 0.384)", "ATE -0.106 (-0.2, -0.015)"],
+              "color": "#E3F2FD",
+              "children": [
+                {
+                  "title": "No Comorbidity",
+                  "details": "N < 20",
+                  "color": "white",
+                  "children": []
+                },
+                {
+                  "title": "Other Comorbidities",
+                  "details": ["N = 58; Observed death <=15", "Observed ABX >74.1% / No-ABX <=15", "Counterfactual ABX mort 0.195 (0.153, 0.25) / No-ABX mort 0.307 (0.213, 0.407)", "ATE -0.111 (-0.206, -0.016)"],
+                  "color": "#E3F2FD",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "Lung Disease",
+              "details": ["N = 55; Observed death <=15", "Observed ABX >72.7% / No-ABX <=15", "Counterfactual ABX mort 0.175 (0.132, 0.22) / No-ABX mort 0.298 (0.195, 0.401)", "ATE -0.123 (-0.223, -0.019)"],
+              "color": "lightgrey",
+              "children": []
+            }
+          ]
         },
         {
-          "title": "Influenza",
-          "details": ["N = 344; Observed death <=15", "Observed ABX 75.3% / No-ABX 24.7%", "Counterfactual ABX mort 0.008 (0.004, 0.013) / No-ABX mort 0.013 (0.003, 0.028)", "ATE -0.005 (-0.02, 0.006)"],
-          "color": "white",
-          "children": []
+          "title": "Shock (No S. Hypoxemia)",
+          "details": ["N = 48; Observed death <=15", "Observed ABX >68.8% / No-ABX <=15", "Counterfactual ABX mort 0.231 (0.177, 0.293) / No-ABX mort 0.337 (0.221, 0.459)", "ATE -0.106 (-0.225, 0.008)"],
+          "color": "lightgrey",
+          "children": [
+            {
+              "title": "No Lung Disease",
+              "details": ["N = 27; Observed death <=15", "Observed ABX >44.4% / No-ABX <=15", "Counterfactual ABX mort 0.233 (0.167, 0.304) / No-ABX mort 0.359 (0.231, 0.507)", "ATE -0.126 (-0.259, -0.001)"],
+              "color": "lightgrey",
+              "children": [
+                {
+                  "title": "No Comorbidity",
+                  "details": "N < 20",
+                  "color": "white",
+                  "children": []
+                },
+                {
+                  "title": "Other Comorbidities",
+                  "details": "N < 20",
+                  "color": "white",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "Lung Disease",
+              "details": ["N = 21; Observed death <=15", "Observed ABX >28.6% / No-ABX <=15", "Counterfactual ABX mort 0.23 (0.159, 0.319) / No-ABX mort 0.316 (0.187, 0.47)", "ATE -0.086 (-0.226, 0.045)"],
+              "color": "lightgrey",
+              "children": []
+            }
+          ]
         },
         {
-          "title": "None",
-          "details": ["N = 12683; Observed death 2.4%", "Observed ABX 83.5% / No-ABX 16.5%", "Counterfactual ABX mort 0.023 (0.02, 0.025) / No-ABX mort 0.03 (0.024, 0.037)", "ATE -0.007 (-0.015, 0)"],
-          "color": "#FDE2E2",
-          "children": []
+          "title": "Severe Hypoxemia (No Shock)",
+          "details": ["N = 315; Observed death 17.1%", "Observed ABX 94.3% / No-ABX 5.7%", "Counterfactual ABX mort 0.171 (0.14, 0.204) / No-ABX mort 0.291 (0.206, 0.361)", "ATE -0.12 (-0.196, -0.03)"],
+          "color": "lightgrey",
+          "children": [
+            {
+              "title": "No Lung Disease",
+              "details": ["N = 153; Observed death 20.9%", "Observed ABX >90.2% / No-ABX <=15", "Counterfactual ABX mort 0.196 (0.157, 0.24) / No-ABX mort 0.321 (0.232, 0.399)", "ATE -0.125 (-0.203, -0.023)"],
+              "color": "lightgrey",
+              "children": [
+                {
+                  "title": "No Comorbidity",
+                  "details": ["N = 50; Observed death <=15", "Observed ABX >70% / No-ABX <=15", "Counterfactual ABX mort 0.161 (0.118, 0.212) / No-ABX mort 0.265 (0.174, 0.357)", "ATE -0.104 (-0.195, -0.012)"],
+                  "color": "lightgrey",
+                  "children": []
+                },
+                {
+                  "title": "Other Comorbidities",
+                  "details": ["N = 103; Observed death 20.4%", "Observed ABX >85.4% / No-ABX <=15", "Counterfactual ABX mort 0.215 (0.171, 0.267) / No-ABX mort 0.348 (0.248, 0.43)", "ATE -0.134 (-0.218, -0.026)"],
+                  "color": "lightgrey",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "Lung Disease",
+              "details": ["N = 162; Observed death 13.6%", "Observed ABX >90.7% / No-ABX <=15", "Counterfactual ABX mort 0.145 (0.115, 0.178) / No-ABX mort 0.261 (0.171, 0.343)", "ATE -0.115 (-0.199, -0.024)"],
+              "color": "lightgrey",
+              "children": []
+            }
+          ]
         },
         {
-          "title": "Other Viruses",
-          "details": ["N = 401; Observed death <=15", "Observed ABX 83.5% / No-ABX 16.5%", "Counterfactual ABX mort 0.019 (0.013, 0.027) / No-ABX mort 0.025 (0.012, 0.045)", "ATE -0.006 (-0.026, 0.011)"],
-          "color": "white",
-          "children": []
-        },
-        {
-          "title": "RSV",
-          "details": ["N = 202; Observed death <=15", "Observed ABX 75.7% / No-ABX 24.3%", "Counterfactual ABX mort 0.013 (0.005, 0.02) / No-ABX mort 0.018 (0.005, 0.034)", "ATE -0.005 (-0.022, 0.011)"],
-          "color": "white",
-          "children": []
+          "title": "Severe Hypoxemia and Shock",
+          "details": ["N = 50; Observed death <=15", "Observed ABX >70% / No-ABX <=15", "Counterfactual ABX mort 0.299 (0.234, 0.367) / No-ABX mort 0.43 (0.3, 0.563)", "ATE -0.131 (-0.272, 0.005)"],
+          "color": "lightgrey",
+          "children": [
+            {
+              "title": "No Lung Disease",
+              "details": ["N = 29; Observed death <=15", "Observed ABX >48.3% / No-ABX <=15", "Counterfactual ABX mort 0.304 (0.228, 0.39) / No-ABX mort 0.44 (0.293, 0.582)", "ATE -0.136 (-0.286, 0.028)"],
+              "color": "lightgrey",
+              "children": [
+                {
+                  "title": "No Comorbidity",
+                  "details": "N < 20",
+                  "color": "white",
+                  "children": []
+                },
+                {
+                  "title": "Other Comorbidities",
+                  "details": ["N = 20; Observed death <=15", "Observed ABX >25% / No-ABX <=15", "Counterfactual ABX mort 0.344 (0.253, 0.444) / No-ABX mort 0.471 (0.314, 0.626)", "ATE -0.127 (-0.281, 0.039)"],
+                  "color": "lightgrey",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "Lung Disease",
+              "details": ["N = 21; Observed death <=15", "Observed ABX >28.6% / No-ABX <=15", "Counterfactual ABX mort 0.299 (0.209, 0.401) / No-ABX mort 0.425 (0.277, 0.582)", "ATE -0.126 (-0.267, 0.013)"],
+              "color": "lightgrey",
+              "children": []
+            }
+          ]
         }
       ]
     }
